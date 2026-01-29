@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #F28135; /*Naranja principal*/
+  --color-secondary: #1A3A5A; /*Azul oscuro*/
+  --color-light: #FFF8F1; /*Crema fondo*/
+  --color-accent: #FFD2A0; /*Naranja suave*/
+
+  --background: var(--color-light);
+  --foreground: var(--color-secondary);
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-light: var(--color-light);
+  --color-accent: var(--color-accent);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
